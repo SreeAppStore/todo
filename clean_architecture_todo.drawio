@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.1">
+  <diagram id="clean-arch-todo" name="Clean Architecture TODO App">
+    <mxGraphModel dx="2946" dy="1116" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="TodoListScreen&lt;br&gt;(TodoListScreen)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;fontSize=16;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="80" y="80" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="TodoProvider&lt;br&gt;(TodoProvider)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#F57C00;fontSize=16;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="440" y="80" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Use Cases&lt;br&gt;(AddTodo,&amp;nbsp;&lt;div&gt;UpdateTodo,&amp;nbsp;&lt;/div&gt;&lt;div&gt;DeleteTodo,&amp;nbsp;&lt;/div&gt;&lt;div&gt;GetTodos, etc)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#388E3C;fontSize=16;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="760" y="50" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Todo Entity&lt;br&gt;(Todo)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#8E24AA;fontSize=16;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="1081" y="310" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="TodoRepository&lt;div&gt;(TodoRepository)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#FBC02D;fontSize=16;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="775" y="470" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="TodoRepositoryImpl&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(TodoRepositoryImpl)&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#0288D1;fontSize=16;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="440" y="290" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="TodoLocalDataSource&lt;div&gt;(TodoLocalDataSource)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4EC;strokeColor=#D81B60;fontSize=16;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="80" y="470" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Hive DB&lt;div&gt;(Hive)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F9FBE7;strokeColor=#AFB42B;fontSize=16;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="110" y="650" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#1976D2;" parent="1" source="2" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#F57C00;" parent="1" source="3" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#388E3C;" parent="1" source="4" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#388E3C;" parent="1" source="4" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#FBC02D;" parent="1" source="6" target="7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#0288D1;" parent="1" source="7" target="8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#D81B60;" parent="1" source="8" target="9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;dashed=1;html=1;strokeColor=#D81B60;" parent="1" source="8" target="7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;dashed=1;html=1;strokeColor=#FBC02D;" parent="1" source="7" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;dashed=1;html=1;strokeColor=#388E3C;" parent="1" source="6" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;dashed=1;html=1;strokeColor=#F57C00;" parent="1" source="4" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;dashed=1;html=1;strokeColor=#1976D2;" parent="1" source="3" target="2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
