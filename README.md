@@ -36,8 +36,8 @@ The project follows Clean Architecture principles:
 ### Installation
 
 ```bash
-git clone <your-repo-url>
-cd arch
+git clone https://github.com/SreeAppStore/todo.git
+cd todo
 flutter pub get
 ```
 
